@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Getting to know Princess Kaye">
+    <meta property="og:description" content="Learn about who Princess Kaye and what she has to offer">
+    <title>Getting to know Princess Kaye</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon1.png">
+    <script src="https://kit.fontawesome.com/30899c88f6.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation bar area - Beginning -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#main" id="navbar__logo"><i class="fas fa-crown" id="crown-icon"></i> Klaye</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#main" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about-me" class="navbar__links"> About Me </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#educ-header" class="navbar__links"> Education </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#skill-header" class="navbar__links"> Skills </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact-container" class="navbar__links"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navigation bar area - END -->
+
+    <!--Hero Area - Beginning -->
+    <div id="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Klaye's Life:</h1>
+                <h2>The Beginning</h2>
+                <p>Hola amigos! I am Princess Kaye Geonzon, a 19-year old woman from Minglanilla, Cebu, Philippines. Currently, I am in my second year in college, pursuing a degree in Information Technology at Cebu Technological University - Main Campus. Get to know me by exploring this page!</p>
+                <button class="main__btn"><a href="#about-me">About Me</a></button>
+            </div>
+            <div class="main__img-container">
+                <img src="images/cover.png" alt="Profile Info" id="main__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT ME AREA -->
+    <div id="about-me">
+        <div class="about-me__container">
+            <div class="image-gallery">
+                <img src="images/1.jpg" alt="Image 1" class="gallery-image" onclick="openFullscreen(this)">
+                <img src="images/2.jpg" alt="Image 2" class="gallery-image" onclick="openFullscreen(this)">
+                <img src="images/3.jpg" alt="Image 3" class="gallery-image" onclick="openFullscreen(this)">
+                <img src="images/4.jpg" alt="Image 4" class="gallery-image" onclick="openFullscreen(this)">
+                <img src="images/5.jpg" alt="Image 5" class="gallery-image" onclick="openFullscreen(this)">
+                <img src="images/6.jpg" alt="Image 6" class="gallery-image" onclick="openFullscreen(this)">
+                <img src="images/7.jpg" alt="Image 7" class="gallery-image" onclick="openFullscreen(this)">
+            </div>
+            
+            <div class="about-me__content">
+                <h2 class="about-me__title">ABOUT ME</h2>
+                <h3 class="about-me__name"><i>I am Princess Kaye, an “aspirant” in life.</i></h3>
+                <p class="about-me__description">Children would always have silly dreams to share. I vividly remember how I would always tell others that I would become a doctor. However, as most people are, their childhood dreams can be different from their lifetime dreams. Dreams could change. I saw how my friends slowly found out what they wanted to do in life. They got to know themselves better, and they discovered what they were passionate about. Honestly, I was envious. I grew up, and I realized I didn’t want to become a doctor. That’s fine, dreams change. However, I didn’t have a specific dream to replace the dream I used to have. I felt hopeless. Others are honing their skills to achieve their goals, but I am still struggling to know where I belong. I was anxious, and I felt like I was left behind. I forced myself to like something. I explored numerous fields only to fail. When I was in my senior year in high school, I was conflicted. I have to decide for my career, and this involves my future. The decision I’ll make will decide what type of life I will have. I did my research, and I realized something. I find Science interesting. I can’t say I am passionate about it, but it did pique my interest. As such, I decided to take up Information Technology. It was on a whim. Now that I am here, I don’t regret it, but I can’t say I’m passionate about it. I believe I will soon find my place and purpose. I am an aspirant who yearns to discover the world to know who I am. I created the conclusion that I don’t have to be as passionate as others, and I can only live once, so I shouldn’t dwell on pursuing what others have that I don’t, right? I want to live happily today, so I am doing that. I aspire to <span style="color: rgb(245, 99, 99);">live</span> and <span style="color: rgb(245, 99, 99);">smile.</span> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen overlay -->
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function openFullscreen(img) {
+            const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+            const fullscreenImage = document.getElementById('fullscreenImage');
+            fullscreenImage.src = img.src;
+            fullscreenOverlay.style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            document.getElementById('fullscreenOverlay').style.display = 'none';
+        }
+    </script>
+
+    <!--My favorites-->
+    
+    <div class="titlee">
+        <h1>My Treasure Box</h1>
+    </div>
+    <div class="album-container">
+        <div id="album1" class="album">
+            <video controls>
+                <source src="images/pets.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="album-title">Pets</div>
+            <div class="album-description">When life gets so serious, our cats and dogs are always there to provide silliness. They are so unserious that I can't help but smile or laugh at every move they try to make. I love my cutie babies.</div>
+        </div>
+        <div id="album2" class="album active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f70M-gaee64?si=9mbGx31BTOLDfCDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="album-title">Ghibli Movies</div>
+            <div class="album-description">I love movies in general, but there is no better than finding solace in ghibli films. These films would always retrieve the inner child in me. When I need therapy or healing, ghibli never dissappoints me. I love the music, the characters, and the plot. It's full of magic and wonders.</div>
+        </div>
+        <div id="album3" class="album">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YGZLvKAFeYI?si=0PQZwsLptT-5typO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="album-title">Anime</div>
+            <div class="album-description">I have loved anime since I was a kid. I used to watch them all the time with my childhood friends, so anime will always have a place in my heart. Not only is it entertaining but it brings back memories from childhood. Nowadays, I rarely see my childhood friends as we are all busy attending to our responsibilities. It's nice that I can reminisce about them through anime shows.</div>
+        </div>
+        
+        <div id="album4" class="album">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8OHzcTtoLo4?si=xX8vxtt7xtUqCoD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="album-title">Manhwa / Mangas</div>
+            <div class="album-description">Most of the time, I spend my time reading comics since I'm always busy. I can read a few chapters in a day, and I'm good. Comics have saved me from going insane because of academic requirements and household chores.</div>
+        </div>
+
+        <div id="album5" class="album">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iFyxffHNwvE?si=QpqF80xyywMSB5sF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="album-title">Kdrama</div>
+            <div class="album-description">When I have the most of the time in the world, I usually binge-watch kdramas. I like following the social media accounts of the actors and actresses as well.</div>
+        </div>
+
+        <div class="album-navigation">
+            <a href="#album" class="nav-link" onclick="previousAlbum()">◀</a>
+            <a href="#album" class="nav-link" onclick="nextAlbum()">▶</a>
+            
+            
+        </div>
+    </div>
+
+    <script>
+    let currentAlbumIndex = 0;
+
+    function showAlbum(index) {
+        const albums = document.querySelectorAll('.album');
+        albums.forEach((album, i) => {
+            album.classList.remove('active');
+            if (i === index) {
+                album.classList.add('active');
+            }
+        });
+        currentAlbumIndex = index;
+    }
+
+    function nextAlbum() {
+        const albums = document.querySelectorAll('.album');
+        currentAlbumIndex = (currentAlbumIndex + 1) % albums.length; 
+        showAlbum(currentAlbumIndex);
+    }
+
+    function previousAlbum() {
+        const albums = document.querySelectorAll('.album');
+        currentAlbumIndex = (currentAlbumIndex - 1 + albums.length) % albums.length; 
+        showAlbum(currentAlbumIndex);
+    }
+
+    showAlbum(currentAlbumIndex); 
+</script>
+<div id="educ-header"></div>
+<div class="headerr"></div>
+<!-- EDUCATION -->
+<div id="educ-me">
+    
+    <div class="educ__container">
+        <div class="educ-gallery">
+            <img src="images/a8.jpg" alt="Image 8" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a1.jpg" alt="Image 1" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a2.jpg" alt="Image 2" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a3.jpg" alt="Image 3" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a4.jpg" alt="Image 4" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a5.jpg" alt="Image 5" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a6.jpg" alt="Image 6" class="educ-image" onclick="openFullscreen(this)">
+            <img src="images/a7.jpg" alt="Image 7" class="educ-image" onclick="openFullscreen(this)">
+        </div>
+        
+        <div class="educ__content">
+            <h2 class="educ__title">EDUCATION</h2>
+            <h3 class="educ__name">Cebu Technological University</h3>
+            <p class="educ__description">Bachelor of Science in Information Technology<br>(2023-present)</p>
+        </div>
+    </div>
+</div>
+
+<!-- Fullscreen overlay -->
+<div id="fullscreenOverlay" class="fullscreen-overlay">
+    <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+    <img id="fullscreenImage" src="" alt="Fullscreen Image">
+</div>
+
+
+<script src="app.js"></script>
+<script>
+    function openFullscreen(img) {
+        const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        fullscreenImage.src = img.src;
+        fullscreenOverlay.style.display = 'flex';
+    }
+
+    function closeFullscreen() {
+        document.getElementById('fullscreenOverlay').style.display = 'none';
+    }
+</script>
+
+<!-- Interests -->
+<div class="titlee">
+    <h1>Interests</h1>
+</div>
+<div></div>
+<div class="albumm-container">
+    <div id="albumm7" class="albumm active">
+        <img src="images/i7.jpg" alt="Read" class="edit-image">
+        <div class="albumm-title">Reading novels</div>
+    </div>
+    <div id="albumm1" class="albumm">
+        <img src="images/i1.jpg" alt="Technology" class="edit-image">
+        <div class="albumm-title">Technology</div>
+    </div>
+    <div id="albumm2" class="albumm">
+        <img src="images/i2.jpg" alt="Music" class="edit-image">
+        <div class="albumm-title">Music</div>
+    </div>
+    <div id="albumm3" class="albumm">
+        <img src="images/i3.jpg" alt="Travel" class="edit-image">
+        <div class="albumm-title">Traveling</div>
+    </div>
+    <div id="albumm4" class="albumm">
+        <img src="images/i4.jpg" alt="Culture" class="edit-image">
+        <div class="albumm-title">Culture</div>
+    </div>
+    <div id="albumm5" class="albumm">
+        <img src="images/i5.jpg" alt="Voice Acting" class="edit-image">
+        <div class="albumm-title">Voice Acting</div>
+    </div>
+    <div id="albumm6" class="albumm">
+        <img src="images/i6.jpg" alt="Hiking" class="edit-image">
+        <div class="albumm-title">Hiking</div>
+    </div>
+
+    <div class="albumm-navigation">
+        <a href="#albumm" class="nav-link" onclick="previousAlbumm()">◀</a>
+        <a href="#albumm" class="nav-link" onclick="nextAlbumm()">▶</a>
+    </div>
+</div>
+
+<script>
+let currentAlbummIndex = 0;
+
+function showAlbumm(index) {
+    const albummElements = document.querySelectorAll('.albumm');
+    albummElements.forEach((albumm, i) => {
+        albumm.classList.remove('active');
+        if (i === index) {
+            albumm.classList.add('active');
+        }
+    });
+    currentAlbummIndex = index;
+}
+
+function nextAlbumm() {
+    const albummElements = document.querySelectorAll('.albumm');
+    currentAlbummIndex = (currentAlbummIndex + 1) % albummElements.length; 
+    showAlbumm(currentAlbummIndex);
+}
+
+function previousAlbumm() {
+    const albummElements = document.querySelectorAll('.albumm');
+    currentAlbummIndex = (currentAlbummIndex - 1 + albummElements.length) % albummElements.length; 
+    showAlbumm(currentAlbummIndex);
+}
+
+showAlbumm(currentAlbummIndex); 
+</script>
+
+
+<!--Skills-->
+<div id="skill-header"></div>
+<div class="skill-title">Skillset</div>
+<div class="skillset-container">
+
+    <div class="box">
+        <div class="box-header">Graphics Design</div>
+        <ul>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Canva</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Video Editing</div>
+        <ul>
+            <li>Capcut</li>
+            <li>After Effects</li>
+            <li>Power Director</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Programming</div>
+        <ul>
+            <li>Java</li>
+            <li>C</li>
+            <li>Python</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Administrative</div>
+        <ul>
+            <li>Grammarly</li>
+            <li>Monday.com</li>
+            <li>Google Suite</li>
+            <li>Google Workspace</li>
+            <li>Dropbox</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Microsoft Suite</div>
+        <ul>
+            <li>Word</li>
+            <li>PowerPoint</li>
+            <li>Excel</li>
+            <li>Publisher</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Website</div>
+        <ul>
+            <li>Google Sites</li>
+            <li>Wix</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Channel</div>
+        <ul>
+            <li>Telegram</li>
+            <li>Discord</li>
+            <li>Messenger</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <div class="box-header">Social Media Marketing</div>
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>TikTok</li>
+            <li>X</li>
+            <li>Tumblr</li>
+            <li>Pinterest</li>
+            <li>Reddit</li>
+            <li>Quora</li>
+        </ul>
+    </div>
+</div>
+    
+
+<!--LOGOS-->
+<div class="icon-container">
+    <i class="fab fa-adobe icon" style="--i: 1;" title="Adobe Photoshop"></i>
+    <i class="fab fa-adobe icon" style="--i: 2;" title="Adobe Illustrator"></i>
+    <i class="fas fa-paint-brush icon" style="--i: 3;" title="Canva"></i>
+    <i class="fas fa-palette icon" style="--i: 4;" title="Sketch"></i>
+    <i class="fas fa-video icon" style="--i: 5;" title="Capcut"></i>
+    <i class="fas fa-magic icon" style="--i: 6;" title="After Effects"></i>
+    <i class="fas fa-film icon" style="--i: 7;" title="Power Director"></i>
+    <i class="fas fa-clapperboard icon" style="--i: 8;" title="Final Cut Pro"></i>
+    <i class="fab fa-java icon" style="--i: 9;" title="Java"></i>
+    <i class="fab fa-python icon" style="--i: 10;" title="Python"></i>
+    <i class="fas fa-code icon" style="--i: 11;" title="C"></i>
+    <i class="fab fa-js-square icon" style="--i: 12;" title="JavaScript"></i>
+    <i class="fab fa-html5 icon" style="--i: 13;" title="HTML5"></i>
+    <i class="fab fa-css3-alt icon" style="--i: 14;" title="CSS3"></i>
+    <i class="fab fa-node icon" style="--i: 15;" title="Node.js"></i>
+    <i class="fab fa-git-alt icon" style="--i: 16;" title="Git"></i>
+    <i class="fab fa-github icon" style="--i: 17;" title="GitHub"></i>
+    <i class="fas fa-spell-check icon" style="--i: 18;" title="Grammarly"></i>
+    <i class="fab fa-monday icon" style="--i: 19;" title="Monday.com"></i>
+    <i class="fab fa-google icon" style="--i: 20;" title="Google Suite"></i>
+    <i class="fab fa-google icon" style="--i: 21;" title="Google Workspace"></i>
+    <i class="fab fa-dropbox icon" style="--i: 22;" title="Dropbox"></i>
+    <i class="fab fa-slack icon" style="--i: 23;" title="Slack"></i>
+    <i class="fab fa-trello icon" style="--i: 24;" title="Trello"></i>
+    <i class="fas fa-file-word icon" style="--i: 25;" title="Word"></i>
+    <i class="fas fa-file-powerpoint icon" style="--i: 26;" title="PowerPoint"></i>
+    <i class="fas fa-file-excel icon" style="--i: 27;" title="Excel"></i>
+    <i class="fas fa-file-alt icon" style="--i: 28;" title="Publisher"></i>
+    <i class="fab fa-microsoft icon" style="--i: 29;" title="Microsoft Teams"></i>
+    <i class="fas fa-globe icon" style="--i: 30;" title="Google Sites"></i>
+    <i class="fab fa-wix icon" style="--i: 31;" title="Wix"></i>
+    <i class="fab fa-wordpress icon" style="--i: 32;" title="WordPress"></i>
+    <i class="fab fa-figma icon" style="--i: 33;" title="Figma"></i>
+    <i class="fab fa-squarespace icon" style="--i: 34;" title="Squarespace"></i>
+    <i class="fab fa-telegram icon" style="--i: 35;" title="Telegram"></i>
+    <i class="fab fa-discord icon" style="--i: 36;" title="Discord"></i>
+    <i class="fab fa-facebook-messenger icon" style="--i: 37;" title="Messenger"></i>
+    <i class="fab fa-whatsapp icon" style="--i: 38;" title="WhatsApp"></i>
+    <i class="fab fa-weixin icon" style="--i: 39;" title="WeChat"></i>
+    <i class="fab fa-facebook icon" style="--i: 40;" title="Facebook"></i>
+    <i class="fab fa-instagram icon" style="--i: 41;" title="Instagram"></i>
+    <i class="fab fa-tiktok icon" style="--i: 42;" title="TikTok"></i>
+    <i class="fab fa-x-twitter icon" style="--i: 43;" title="X (Twitter)"></i>
+    <i class="fab fa-tumblr icon" style="--i: 44;" title="Tumblr"></i>
+    <i class="fab fa-pinterest icon" style="--i: 45;" title="Pinterest"></i>
+    <i class="fab fa-reddit icon" style="--i: 46;" title="Reddit"></i>
+    <i class="fas fa-question icon" style="--i: 47;" title="Quora"></i>
+    <i class="fab fa-linkedin icon" style="--i: 48;" title="LinkedIn"></i>
+    <i class="fab fa-youtube icon" style="--i: 49;" title="YouTube"></i>
+    <i class="fab fa-snapchat icon" style="--i: 50;" title="Snapchat"></i>
+</div>
+
+<div class="headerr"></div>
+<!--CONTACTS-->
+<div id="contact-container">
+    <div id="tagline">Together, We Can!</div>
+    <div id="contacts">
+        <div class="contact-item">
+            <i class="fab fa-instagram"></i> 
+            <a href="https://www.instagram.com/princesskey.g" target="_blank" class="contact-link">princesskey.g</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i> 
+            <a href="https://ph.linkedin.com/in/princess-kaye-s-geonzon-250b85212" target="_blank" class="contact-link">Princess Kaye S. Geonzon</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i> 
+            <a href="mailto:princessgeonzon29@gmail.com" class="contact-link">princessgeonzon29@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-facebook"></i> 
+            <a href="https://facebook.com/PrincessKaye.sg" target="_blank" class="contact-link">Facebook</a>
+        </div>
+    </div>
+</div>
+
+<div class="headerr"></div>
+
+</body>
+
+</html>
